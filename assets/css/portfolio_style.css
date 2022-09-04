@@ -1,0 +1,49 @@
+:root {
+    --color-100: #b8dcfa;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 10;
+    background-image: var(--bs-gradient) !important;
+    background-repeat: no-repeat;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 25px;
+}
+
+.center1 {
+    font-size: 16px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+}
+
+.btn.btn-dark:hover {
+    color: var(--color-100);
+}
+
+.link {
+    color: white;
+    text-decoration-line: none;
+}
+
+.link:hover {
+    color: var(--color-100);
+    text-decoration-line: none;
+}
+
+.carroselvisual {
+    min-height: 600px;
+}
+
+.imgvisual {
+    height: auto;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+}

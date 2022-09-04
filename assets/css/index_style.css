@@ -1,0 +1,63 @@
+/* CRIANDO AS CORES PARA USAR */
+:root {
+    --color-50: #e0f4ff;
+    --color-100: #b8dcfa;
+    --color-200: #8ec4f1;
+    --color-300: #63ace8;
+    --color-400: #3994e0;
+    --color-500: #1f7bc6;
+    --color-600: #135f9b;
+    --color-700: #084470;
+    --color-800: #002946;
+    --color-900: #000f1d;
+  }
+
+  /* MELHORANDO A CONFIGURAÇÃO DA COR DO FUNDO DA PAGINA */
+.bg-primary {
+    --bs-bg-opacity: 10;
+    background-image: var(--bs-gradient) !important;
+    background-repeat: no-repeat;
+  }
+
+  /* MELHORANDO AS CONFIGURAÇÕES DO TITULO */
+.title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 70px 15px;
+}
+
+ /* MELHORANDO AS CONFIGURAÇÕES DO BOTÃO */
+.btn.btn-dark {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    max-width: 400px;
+    width: 50%;
+    padding: 10px;
+}
+
+ /* DEFININDO A COR DO TEXTO AO PASSAR O MOUSE POR CIMA DO BOTAO */
+.btn.btn-dark:hover {
+    color: var(--color-100);
+}
+
+ /* COR DO LINKS */
+.link {
+    color: var(--color-700);
+    text-decoration-line: none;
+}
+
+ /* COR DOS LINKS AO PASSAR O MOUSE POR CIMA */
+.link:hover {
+    color: white;
+    text-decoration-line: none;
+}
+
+ /* COR DO TEXTO DE COPYRIGHT */
+.footer {
+    text-align: center;
+    padding: 35px;
+    color: white;
+  }

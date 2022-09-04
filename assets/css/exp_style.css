@@ -1,0 +1,57 @@
+
+/* MELHORANDO A CONFIGURAÇÃO DA COR DO FUNDO DA PAGINA */
+.bg-primary {
+    --bs-bg-opacity: 10;
+    background-image: var(--bs-gradient) !important;
+    background-repeat: no-repeat;
+}
+
+/* DEFININDO A COR DO TEXTO AO PASSAR O MOUSE POR CIMA DO BOTAO */
+.btn.btn-dark:hover {
+    color: var(--color-100);
+}
+
+/* DEFINIÇÕES DA BARRA DE PROGRESSO */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* BARRA DE PROGRESSO */
+  .slider {
+      overflow: hidden;
+      width: 100%;
+      height: 17px;
+      border-radius: 10px;
+      outline: none;
+      -webkit-appearance: none;
+      background-color: #e9ecef;
+    }
+    
+    .slider::-webkit-slider-runnable-track {
+      height: 25px;
+      -webkit-appearance: none;
+      color: rgb(25,135,84);
+      margin-top: -1px;
+    }
+    
+    /* PONTA DA DIREITA */
+    .slider::-webkit-slider-thumb {
+      width: 5px;
+      -webkit-appearance: none;
+      height: 25px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -4000px 0 0 4000px rgb(25,135,84);
+    }
+}
+/* FF */
+.slider::-moz-range-progress {
+  background-color: rgb(25,135,84); 
+}
+.slider::-moz-range-track {  
+  background-color: #e9ecef;
+}
+/* IE */
+.slider::-ms-fill-lower {
+  background-color: rgb(25,135,84); 
+}
+.slider::-ms-fill-upper {  
+  background-color: #e9ecef;
+}

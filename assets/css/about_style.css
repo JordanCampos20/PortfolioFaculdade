@@ -1,0 +1,30 @@
+
+/* MELHORANDO A CONFIGURAÇÃO DA COR DO FUNDO DA PAGINA */
+.bg-primary {
+    --bs-bg-opacity: 10;
+    background-image: var(--bs-gradient) !important;
+    background-repeat: no-repeat;
+}
+
+/* FORMATO DA IMAGEM */
+body .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    border-radius: 50%;
+
+    border: 3px solid #fff;
+}
+
+/* CENTRALIZAÇÃO */
+body .center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* DEFININDO A COR DO TEXTO AO PASSAR O MOUSE POR CIMA DO BOTAO */
+.btn.btn-dark:hover {
+    color: var(--color-100);
+}

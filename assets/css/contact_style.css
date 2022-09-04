@@ -1,0 +1,11 @@
+
+/* COR DO FUNDO */
+.bg-primary {
+    --bs-bg-opacity: 10;
+    background-image: var(--bs-gradient) !important;
+    background-repeat: no-repeat;
+}
+
+.btn.btn-dark:hover {
+    color: var(--color-100);
+}
