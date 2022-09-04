@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- CONFIGURAÇÃO DA PAGINA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- IMPORTANDO O ESTILO PARA A PAGINA -->
+    <link rel="stylesheet" href="assets/css/portfolio_style.css">
+
+    <!-- IMPORTANDO OS ICONES DA PAGINA -->
+    <link href="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/favicon.png" rel="icon">
+    <link href="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/icon.png" rel="icon">
+
+    <!-- IMPORTANDO O SCRIPT DOS BOTOES-->
+    <script src="assets/js/buttons.js"></script>
+
+    <!-- IMPORTANDO O CSS DO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+     <!-- SETANDO O TITULO -->
+    <title>Portfolio</title>
+</head>
+<!-- ESCOLHENDO A COR DO TEXTO E DO FUNDO  -->
+<body class="bg-primary p-2 text-white">
+    <!-- BOTAO PARA VOLTAR A PAGINA INICIAL -->
+    <button class="btn btn-dark ml-1 mt-1" onclick="botao.voltar()" role="button">Voltar</button>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <!-- MINI BOTOES QUE MOSTRA EM QUAL SLIDE VOCÊ ESTA -->
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carroselvisual">
+            <div class="carousel-item active">
+                <!-- TEXTO COM LINK DO PROJETO -->
+                <h1 class="center ml-1 mt-1"><a href="https://github.com/JordanCampos20/RelogioUniversal" class="link">Relogio Universal</a></h1>
+                <!-- IMAGEM DE EXEMPLO DO PROJETO -->
+                <img src="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/1.png" class="imgvisual" alt="...">
+                <!-- DESCRIÇÃO DO PROJETO -->
+                <p class="center1 ml-1 mt-1">Projeto Simples de um Alarme Que Toca no Celular e Computador.</p>
+            </div>
+            <div class="carousel-item">
+                <!-- TEXTO COM LINK DO PROJETO -->
+                <h1 class="center ml-1 mt-1"><a href="https://webpythonflask.herokuapp.com/login" class="link">Criador de Notas</a></h1>
+                <!-- IMAGEM DE EXEMPLO DO PROJETO -->
+                <img src="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/2.png" class="imgvisual" alt="...">
+                <!-- DESCRIÇÃO DO PROJETO -->
+                <p class="center1 ml-1 mt-1">Projeto Simples de Salvar Notas no Banco de Dados Baseado em Contas.</p>
+            </div>
+            <div class="carousel-item">
+                <!-- TEXTO COM LINK DO PROJETO -->
+                <h1 class="center ml-1 mt-1"><a href="https://webqrcodegenerator.herokuapp.com/" class="link">QR Code Generator</a></h1>
+                <!-- IMAGEM DE EXEMPLO DO PROJETO -->
+                <img src="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/3.png" class="imgvisual" alt="...">
+                <!-- DESCRIÇÃO DO PROJETO -->
+                <p class="center1 ml-1 mt-1">Projeto Simples de Criação de QR Code Com Imagem no Meio.</p>
+            </div>
+        </div>
+        <!-- BOTAO DE VOLTAR O PROJETO -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- TEXTO DO BOTAO -->
+            <span class="visually-hidden">Voltar</span>
+        </button>
+        <!-- BOTAO DE PASSAR O PROJETO -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- TEXTO DO BOTAO -->
+            <span class="visually-hidden">Proximo</span>
+        </button>
+    </div>
+
+    <!-- IMPORTAÇÃO DOS SCRIPTS DO BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+</body>
+</html>

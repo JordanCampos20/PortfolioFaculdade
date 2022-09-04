@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+     <!-- CONFIGURAÇÃO DA PADGINA -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IMPORTANDO O ESTILO PARA A PAGINA -->
+    <link rel="stylesheet" href="assets/css/exp_style.css">
+
+     <!-- IMPORTANDO OS ICONES DA PAGINA -->
+    <link href="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/favicon.png" rel="icon">
+    <link href="https://raw.githubusercontent.com/JordanCampos20/PortfolioOnlineFaculdade/main/assets/images/icon.png" rel="icon">
+
+    <!-- IMPORTANDO O SCRIPT DOS BOTOES-->
+    <script src="assets/js/buttons.js"></script>
+    <script src="assets/js/progressdragging.js"></script>
+
+    <!-- IMPORTANDO O CSS DO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- SETANDO O TITULO -->
+    <title>Experiencias</title>
+</head>
+
+<!-- ESCOLHENDO A COR DO TEXTO E DO FUNDO e DANDO CARREGANDO UM SCRIPT AO ABRIR A PAGINA  -->
+<body class="bg-primary p-2 text-white" onload="drag.updateValue()">
+    
+    <!-- BOTAO -->
+    <button class="btn btn-dark ml-1 mt-1" onclick="botao.voltar()" role="button">Voltar</button>
+
+    <!-- TABELAS -->
+    <table class="table table-bordered mt-3 table-striped table-primary">
+        <!-- CABEÇA DA TABELA -->
+        <thead>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE AS COLUNAS SUPERIORES -->
+                <th style="width: 10px">#</th>
+                <th>Habilidades</th>
+                <th>Nivel</th>
+                <th style="width: 65px">Texto</th>
+            </tr>
+        </thead>
+        <!-- CORPO DA TABELA -->
+        <tbody>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>1.</td>
+                <!-- NOME DA LINHA -->
+                <td>Python</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="90" class="slider random" id="progressPython">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressPythonLabel">90%</span>
+                </td>
+            </tr>
+
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>2.</td>
+                <!-- NOME DA LINHA -->
+                <td>C#</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="75" class="slider random" id="progressCSHARP">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressCSHARPLabel">75%</span>
+                </td>
+            </tr>
+
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>3.</td>
+                <!-- NOME DA LINHA -->
+                <td>Java</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="50" class="slider random" id="progressJava">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressJavaLabel">50%</span>
+                </td>
+            </tr>
+
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>4.</td>
+                <!-- NOME DA LINHA -->
+                <td>HTML</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="40" class="slider random" id="progressHTML">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressHTMLLabel">40%</span>
+                </td>
+            </tr>
+
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>5.</td>
+                <!-- NOME DA LINHA -->
+                <td>CSS</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="43" class="slider random" id="progressCSS">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressCSSLabel">43%</span>
+                </td>
+            </tr>
+
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>6.</td>
+                <!-- NOME DA LINHA -->
+                <td>JavaScript</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="35" class="slider random" id="progressJS">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="progress-label badge bg-success" id="progressJSLabel">35%</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-bordered mt-3 table-striped table-primary">
+        <thead>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <th style="width: 10px">#</th>
+                <th>Escolaridade</th>
+                <th>Nivel</th>
+                <th style="width: 120px;">Texto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>1.</td>
+                <!-- NOME DA LINHA -->
+                <td>Faculdade</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="52" class="slider" id="progressF">
+                </td>
+                <td class="text-center">
+                    <!-- TEXTO FINAL -->
+                    <span class="badge bg-success" id="progressFLabel">Formando</span>
+                </td>
+            </tr>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>2.</td>
+                <!-- NOME DA LINHA -->
+                <td>Ensino Médio</td>
+                <td>
+                    <div class="progress" style="height: 17px">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%""></div>
+                    </div>
+                </td>
+                <td class="text-center">
+                    <span class="badge bg-success" id="progressEMLabel">Concluído</span>
+                </td>
+            </tr>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- DEFINE OS VALORES DAS COLUNAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>3.</td>
+                <!-- NOME DA LINHA -->
+                <td>Ensino Fundamental</td>
+                <td>
+                    <div class="progress" style="height: 17px">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%""></div>
+                    </div>
+                </td>
+                <td class="text-center">
+                    <span class="badge bg-success" id="progressEFLabel">Concluído</span>
+                </td>
+            </tr>
+    </table>
+
+    <table class="table table-bordered mt-3 table-striped table-primary">
+        <!-- CABEÇA DA TABELA -->
+        <thead>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <th style="width: 10px">#</th>
+                <th>Trabalho</th>
+                <th>Mês</th>
+                <th style="width: 40px">Texto</th>
+            </tr>
+        </thead>
+        <!-- CORPO DA TABELA -->
+        <tbody>
+            <!-- LINHA HORIZONTAL -->
+            <tr>
+                <!-- VALORES DAS LINHAS INFERIORES -->
+                <!-- NUMERO DA LINHA -->
+                <td>1.</td>
+                <!-- NOME DA LINHA -->
+                <td>Josapar</td>
+                <td>
+                    <!-- BARRA DE PROGRESSO COM ENTRADA DE VALOR DA LINHA -->
+                    <input type="range" min="1" max="100" value="5" class="slider" id="progressJosapar">
+                </td>
+                <td>
+                    <!-- TEXTO FINAL -->
+                    <span class="badge bg-success">Atualmente</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <table class="table table-bordered mt-3 table-striped table-primary">
+        <thead>
+            <tr>
+                <th style="width: 10px">#</th>
+                <th>Idiomas</th>
+                <th>Nivel</th>
+                <th style="width: 40px">Texto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Português</td>
+                <td>
+                    <input type="range" min="1" max="100" value="100" class="slider" id="progressPortu">
+                </td>
+                <td>
+                    <span class="badge bg-success">100%</span>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Inglês</td>
+                <td>
+                    <input type="range" min="1" max="100" value="30" class="slider" id="progressIngles">
+                </td>
+                <td>
+                    <span class="badge bg-success">30%</span>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- BOTAO DE RANDOMIZAR OS VALORES DAS COLUNAS -->
+    <button class="btn btn-dark" onclick="drag.randomValueS()">Random</button>
+    
+</body>
+</html>
