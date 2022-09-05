@@ -56,7 +56,7 @@ class Botoes {
             
         }
         else {
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSerTcBHIRIeVmeBUu55IeMJnYKBi20L-d3mSCDU9Hvwa8ZM8Q/viewform?usp=pp_url&entry.2005620554=" + email + select + "&entry.1045781291=" + name + "entry.839337160=" + message;
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSerTcBHIRIeVmeBUu55IeMJnYKBi20L-d3mSCDU9Hvwa8ZM8Q/viewform?usp=pp_url&entry.2005620554=" + email + select + "&entry.1045781291=" + name + "&entry.839337160=" + message;
         }
     }
 }
